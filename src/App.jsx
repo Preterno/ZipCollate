@@ -32,8 +32,6 @@ function App() {
           if (formData.excludeList)
             content.append("excludeList", formData.excludeList);
 
-          console.log(`${apiUrl}/compare_zips`);
-
           const response = await fetch(`${apiUrl}/compare_zips`, {
             method: "POST",
             mode: "cors",
