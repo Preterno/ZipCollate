@@ -4,7 +4,16 @@ import { LoadingIcon } from "./SvgIcon";
 
 function Compare() {
   const { toggleResult, isLoading, formData, setErrorState } = useAppContext();
-  const isZipFile = (file) => file.type === "application/x-zip-compressed";
+
+  const isZipFile = (file) => {
+    return (
+      file.type === "application/x-zip-compressed" ||
+      file.type === "application/zip" ||
+      file.type === "multipart/x-zip" ||
+      file.type === "application/octet-stream" ||
+      file.name.endsWith(".zip")
+    );
+  };
 
   const maxSize = 50 * 1024 * 1024;
 

@@ -13,6 +13,7 @@ function App() {
   const [result, setResult] = useState(null);
 
   const apiUrl = import.meta.env.VITE_APP_API_URL;
+  const apiKey = import.meta.env.API_KEY
 
   useEffect(() => {
     async function fetchResult() {
@@ -37,6 +38,7 @@ function App() {
             mode: "cors",
             headers: {
               Accept: "application/json",
+              'X-API-KEY': apiKey,
             },
             body: content,
           });
