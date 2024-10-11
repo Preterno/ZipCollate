@@ -6,7 +6,7 @@ function Navbar() {
       <h1 className="title text-white self-center cursor-pointer">
         Zip<span className="title text-accent">Collate</span>
       </h1>
-      <a href="https://www.github.com" className="h-fit w-fit self-center">
+      <a href="https://github.com/Preterno/ZipCollate" className="h-fit w-fit self-center">
         <GithubIcon />
       </a>
     </div>
