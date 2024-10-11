@@ -13,7 +13,7 @@ function App() {
   const [result, setResult] = useState(null);
 
   const apiUrl = import.meta.env.VITE_APP_API_URL;
-  const apiKey = import.meta.env.API_KEY
+  const apiKey = import.meta.env.VITE_API_KEY
 
   useEffect(() => {
     async function fetchResult() {
