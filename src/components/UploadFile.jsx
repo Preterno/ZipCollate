@@ -28,7 +28,13 @@ function UploadFile({ number }) {
     e.preventDefault();
     setDragging(false);
     const file = e.dataTransfer.files[0];
-    if (file && file.type === "application/x-zip-compressed") {
+    if (
+      (file && file.type === "application/x-zip-compressed") ||
+      file.type === "application/zip" ||
+      file.type === "multipart/x-zip" ||
+      file.type === "application/octet-stream" ||
+      file.name.endsWith(".zip")
+    ) {
       setUploadedFile(file);
       setFileName(file.name);
       setFileStatus(true);
