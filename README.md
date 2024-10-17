@@ -104,4 +104,4 @@ The backend for this project is a separate Flask API, responsible for the core f
 
 ## Connect with Me
 
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/).
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/aslam8483).
